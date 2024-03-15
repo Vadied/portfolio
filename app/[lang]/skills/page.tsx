@@ -1,6 +1,6 @@
 import skills from "@/app/assets/skills";
 import { t } from "@/lib/utils";
-import { Search, SkillCard } from "@/ui";
+import { Search, SkillCard } from "@/app/ui";
 
 type Props = {
   params: {

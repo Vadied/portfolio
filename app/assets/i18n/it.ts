@@ -1,4 +1,4 @@
-import { ITranslation } from "@/types";
+import { ITranslation } from "@/app/types";
 
 const trad: ITranslation = {
   header: {

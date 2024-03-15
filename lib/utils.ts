@@ -1,5 +1,5 @@
 import translations from "@/app/assets/i18n";
-import { ITranslation } from "@/types";
+import { ITranslation } from "@/app/types";
 
 export const getLocale = (pathname: string) => {
   return pathname.split("/")[1];

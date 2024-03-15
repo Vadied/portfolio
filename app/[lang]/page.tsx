@@ -1,5 +1,5 @@
 import { t } from "@/lib/utils";
-import { ProfileImage } from "@/ui";
+import { ProfileImage } from "@/app/ui";
 
 type Props = {
   params: {
