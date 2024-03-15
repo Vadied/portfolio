@@ -2,7 +2,7 @@
 
 import { usePathname } from "next/navigation";
 import { getLocale, isNavActive, t } from "@/lib/utils";
-import pages from "@/assets/pages";
+import pages from "@/app/assets/pages";
 import NavLink from "./navLink";
 
 const Header = () => {

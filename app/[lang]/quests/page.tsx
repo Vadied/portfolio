@@ -1,4 +1,4 @@
-import quests from "@/assets/quests";
+import quests from "@/app/assets/quests";
 
 type Props = {
   params: {

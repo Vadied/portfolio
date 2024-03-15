@@ -1,4 +1,4 @@
-import skills from "@/assets/skills";
+import skills from "@/app/assets/skills";
 import { t } from "@/lib/utils";
 import { Search, SkillCard } from "@/ui";
 

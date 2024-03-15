@@ -1,4 +1,4 @@
-import translations from "@/assets/i18n";
+import translations from "@/app/assets/i18n";
 import { ITranslation } from "@/types";
 
 export const getLocale = (pathname: string) => {
