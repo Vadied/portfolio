@@ -5,6 +5,9 @@ export const getLocale = (pathname: string) => {
   return pathname.split("/")[1];
 };
 
+export const isNavActive = (pathname: string, href: string) =>
+  `${pathname}${href.endsWith("/") ? "/" : ""}` === href;
+
 const getNestedTranslations = (language: string, keys: string[]) => {
   return keys.reduce(
     (obj: string | ITranslation, key) => (obj as ITranslation)?.[key],

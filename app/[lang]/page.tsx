@@ -1,7 +1,5 @@
-import Image from "next/image";
-
-import noProfile from "@/assets/images/no_profile.png";
 import { t } from "@/lib/utils";
+import { ProfileImage } from "@/ui";
 
 type Props = {
   params: {
@@ -23,7 +21,7 @@ const Page = ({ params }: Props) => {
         </h3>
       </div>
       <div>
-        <Image src={noProfile} alt="Davide Filippi" height={200} />
+        <ProfileImage />
       </div>
     </div>
   );

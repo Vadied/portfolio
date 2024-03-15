@@ -17,6 +17,13 @@ const trad: ITranslation = {
     location: "di Torino, Italia",
     level: "Livello 33",
   },
+  skills:{
+    title: "Le mie competenze",
+    search:{
+      placeholder: "Cerca abilità per nome",
+      noResults: "Nessun risultato trovato",
+    }
+  },
 };
 
 export default trad;

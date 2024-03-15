@@ -7,6 +7,10 @@ const config: Config = {
     current: "currentColor",
     extend: {
       colors: {
+        parchment: {
+          lighter: "rgb(245, 245, 220, 0.7)",
+          DEFAULT: "rgba(210, 180, 140, 0.5);", 
+        },
         background: {
           lighter: "#2e374a", // gray-800
           light: "#182237", // gray-900
@@ -71,7 +75,9 @@ const config: Config = {
         metric: ["1.875rem", { lineHeight: "2.25rem" }],
       },
       backgroundImage: {
-        parchment: "url('./public/imgs/parchment.jpg')",
+        //parchment: "url('/imgs/parchment.jpg')",
+        parchmentImg: "url('/imgs/old_parchment.jpg')",
+        'gradient-radial': 'radial-gradient(var(--tw-gradient-stops))',
       },
     },
   },
