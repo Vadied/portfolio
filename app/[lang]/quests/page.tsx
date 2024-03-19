@@ -5,9 +5,7 @@ type Props = {
     lang: string;
   };
 };
-const Page = ({ params }: Props) => {
-  const { lang } = params;
-  console.log("quests", lang);
+const Page = ({ params: { lang } }: Props) => {
   return (
     <div className="min-h-screen bg-gray-200 py-8 px-4">
       <h1 className="text-3xl font-bold mb-8">Le tue Quest passate</h1>

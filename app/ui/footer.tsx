@@ -9,7 +9,7 @@ type Props = {
 const Footer = async ({ lng }: Props) => {
   const { t } = await useTranslation(lng, "footer");
   return (
-    <footer className="p-4">
+    <footer className="p-4" style={{ height: "10vh" }}>
       <Trans i18nKey="languageSwitcher" t={t}>
         Switch from <strong>{ lng }</strong> to:{" "}
       </Trans>

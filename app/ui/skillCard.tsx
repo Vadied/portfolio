@@ -16,7 +16,7 @@ const SkillCard = ({ label, value, subskills }: Props) => {
 
   return (
     <div
-      className={`border border-gray-300 shadow-md rounded-md p-4 bg-parchment transition-transform transform  w-64 ${
+      className={`border border-gray-300 shadow-md rounded-md p-4 bg-parchment transition-transform transform  w-64 h-80 ${
         hovered ? "scale-105" : ""
       }`}
       onMouseEnter={() => setHovered(true)}

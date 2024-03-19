@@ -8,7 +8,7 @@ type Props = {
 const Header = async ({ lng }: Props) => {
   const { t } = await useTranslation(lng, "header");
   return (
-    <header className="flex justify-between p-4">
+    <header className="flex justify-between p-4" style={{ height: "10vh" }}>
       <h1>Davide Filippi</h1>
       <ul className="flex gap-4">
         {Object.values(pages).map((page) => (

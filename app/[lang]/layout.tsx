@@ -29,7 +29,7 @@ export default function RootLayout({ children, params: { lang } }: Props) {
         style={{ backgroundImage: `url(${parchment.src})` }}
       >
         <Header lng={lang} />
-        <main className="p-4 flex-grow">{children}</main>
+        <main className="p-4 flex-grow" style={{ maxHeight: "80vh" }}>{children}</main>
         <Footer lng={lang} />
         <SpeedInsights />
         <Analytics />

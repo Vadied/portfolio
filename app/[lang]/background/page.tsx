@@ -5,9 +5,7 @@ type Props = {
     lang: string;
   };
 };
-const Page = ({ params }: Props) => {
-  const { lang } = params;
-  console.log("background", lang);
+const Page = ({ params: { lang } }: Props) => {
   return (
     <div className="bg-parchment min-h-screen flex justify-center items-center">
       <div className="bg-gray-200 p-8 rounded-lg border-2 border-gray-300">

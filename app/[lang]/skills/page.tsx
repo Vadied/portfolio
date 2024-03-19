@@ -20,7 +20,7 @@ const Page = async ({ params: { lng }, searchParams }: Props) => {
   );
 
   return (
-    <div className="flex flex-col">
+    <div className="h-full flex flex-col" >
       <div className="flex flex-col md:flex-row justify-between mb-4 flex-wrap gap-8">
         <h1 className="text-4xl font-bold mb-4">{t("title", lng)}</h1>
         <Search
@@ -31,7 +31,6 @@ const Page = async ({ params: { lng }, searchParams }: Props) => {
       </div>
       <div
         className="flex-grow flex flex-wrap gap-4 overflow-y-auto p-4"
-        style={{ maxHeight: "80vh" }}
       >
         {!filteredSkills.length && (
           <div className="h-full text-center font-bold w-full text-2xl">
