@@ -1,7 +1,7 @@
 const pages = {
-  home: { href: "", label: "header.profile" },
-  skills: { href: "skills", label: "header.skills" },
-  background: { href: "background", label: "header.background" },
-  quests: { href: "quests", label: "header.quests" },
+  home: { href: "", label: "profile" },
+  skills: { href: "skills", label: "skills" },
+  background: { href: "background", label: "background" },
+  quests: { href: "quests", label: "quests" },
 };
 export default pages;

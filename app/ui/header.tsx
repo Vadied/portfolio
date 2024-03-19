@@ -1,29 +1,21 @@
-"use client";
-
-import { usePathname } from "next/navigation";
-import { getLocale, isNavActive, t } from "@/lib/utils";
 import pages from "@/app/assets/pages";
+import { useTranslation } from "@/lib/i18n";
 import NavLink from "./navLink";
 
-const Header = () => {
-  const pathname = usePathname();
-  const lang = getLocale(pathname);
+type Props = {
+  lng: string;
+};
+const Header = async ({ lng }: Props) => {
+  const { t } = await useTranslation(lng, "header");
   return (
     <header className="flex justify-between p-4">
       <h1>Davide Filippi</h1>
       <ul className="flex gap-4">
         {Object.values(pages).map((page) => (
           <li key={page.href}>
-            <NavLink
-              isActive={isNavActive(pathname, `/${lang}/${page.href}`)}
-              label={t(page.label, lang)}
-              href={`/${lang}/${page.href}`}
-            />
+            <NavLink label={t(page.label)} href={`/${lng}/${page.href}`} />
           </li>
         ))}
-        {/* <li>
-          <Link href="/en">{t("langs.en", pathname)}</Link>
-        </li> */}
       </ul>
     </header>
   );
